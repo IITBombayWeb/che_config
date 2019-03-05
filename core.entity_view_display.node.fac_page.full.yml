@@ -28,7 +28,7 @@ dependencies:
     - responsive_image.styles.narrow
   enforced:
     module:
-      - iitb_academic_faculty_page
+      - acadmix_faculty
   module:
     - ds
     - entity_reference_revisions

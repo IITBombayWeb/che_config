@@ -26,7 +26,7 @@ dependencies:
     - node.type.fac_page
   enforced:
     module:
-      - iitb_academic_faculty_page
+      - acadmix_faculty
   module:
     - ds
     - entity_reference_revisions

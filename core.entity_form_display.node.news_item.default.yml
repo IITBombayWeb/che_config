@@ -10,7 +10,7 @@ dependencies:
     - node.type.news_item
   enforced:
     module:
-      - iitb_academic_news
+      - acadmix_news
   module:
     - datetime
     - image
