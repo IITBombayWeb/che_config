@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_400_300_
+label: 'Thumbnail (400×300)'
+effects:
+  e5200240-f6fe-490e-b6c7-76870aef65d5:
+    uuid: e5200240-f6fe-490e-b6c7-76870aef65d5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300

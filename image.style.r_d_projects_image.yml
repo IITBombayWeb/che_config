@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: r_d_projects_image
+label: 'R&D Projects Image'
+effects:
+  8a453494-6853-4114-84a8-8a8178e23ec6:
+    uuid: 8a453494-6853-4114-84a8-8a8178e23ec6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_150_200
+label: 'Thumbnail (150×200)'
+effects:
+  01f8254c-399d-42b9-b1ef-8a04b33340d3:
+    uuid: 01f8254c-399d-42b9-b1ef-8a04b33340d3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 250

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'contact us'
+revision: 0
+description: 'custom block for contact us'

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_contact_no_address_block
+id: block_content.contact_us.field_contact_no_address_block
+field_name: field_contact_no_address_block
+entity_type: block_content
+bundle: contact_us
+label: 'Contact no.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

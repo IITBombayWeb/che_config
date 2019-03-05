@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: home_slider
+label: 'home slider'
+effects:
+  db4734d4-6268-45d1-8e49-1b2676b2e467:
+    uuid: db4734d4-6268-45d1-8e49-1b2676b2e467
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 400
