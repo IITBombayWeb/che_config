@@ -37,11 +37,11 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_news_date
         - links
-        - body
-        - field_news_images
+        - field_news_date
         - field_news_type
+        - field_news_images
+        - body
 id: node.news_item.full
 targetEntityType: node
 bundle: news_item
@@ -50,21 +50,50 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: ds_content
   field_news_date:
-    type: datetime_plain
-    weight: 0
+    type: datetime_custom
+    weight: 1
     region: ds_content
     label: above
     settings:
       timezone_override: ''
-    third_party_settings: {  }
+      date_format: 'M d, Y'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: 'col-sm-2 fw-bold'
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'row mb-10'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: col-sm-10
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
   field_news_images:
-    weight: 2
-    label: above
+    weight: 3
+    label: hidden
     settings:
       image_style: thumbnail_400_300_
       image_link: ''
@@ -101,11 +130,40 @@ content:
     type: image
     region: ds_content
   field_news_type:
-    weight: 3
+    weight: 2
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: 'col-sm-2 fw-bold'
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'row mb-10'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: col-sm-10
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
     type: entity_reference_label
     region: ds_content
   links:
